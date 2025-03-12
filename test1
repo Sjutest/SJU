@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titlu Website</title>
+</head>
+<body>
+    <header>
+        <h1>Bine ai venit pe site-ul meu!</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Acasă</a></li>
+            <li><a href="#despre">Despre</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Despre Acasă</h2>
+        <p>Aici poți adăuga conținutul principal al site-ului tău.</p>
+    </section>
+
+    <section id="despre">
+        <h2>Despre</h2>
+        <p>Un pic despre tine sau website-ul tău.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Cum poți fi contactat.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Numele Tău. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>
