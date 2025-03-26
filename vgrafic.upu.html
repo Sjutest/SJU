@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizualizare Grafic.pdf</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif; /* Fontul paginii */
+            margin: 0; /* Elimină marginile implicite */
+            padding: 0; /* Elimină padding-ul */
+            background-color: #e0f7fa; /* Fundal colorat */
+            display: flex; /* Folosește flexbox pentru aliniere */
+            height: 100vh; /* Întreaga înălțime a ferestrei */
+        }
+        .side-image {
+            width: 100px; /* Lățimea imaginilor laterale */
+            height: 100%; /* Întreaga înălțime a ferestrei */
+            object-fit: cover; /* Asigură că imaginea se potrivește bine */
+        }
+        .pdf-container {
+            flex: 1; /* Permite iframe-ului să ocupe tot spațiul disponibil */
+            display: flex; /* Folosește flexbox pentru a centra iframe-ul */
+            justify-content: center; /* Centrează iframe-ul pe orizontală */
+            align-items: center; /* Centrează iframe-ul pe verticală */
+        }
+        iframe {
+            width: 80%; /* Lățimea iframe-ului */
+            height: 80%; /* Înălțimea iframe-ului */
+            border: none; /* Fără bordură */
+            border-radius: 10px; /* Colțuri rotunjite */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Umbra pentru iframe */
+            background-color: white; /* Fundal alb pentru iframe */
+        }
+    </style>
+</head>
+<body>
+    <img src="st1.png" alt="Imagine Stânga" class="side-image"> <!-- Imaginea din stânga -->
+    
+    <div class="pdf-container">
+        <iframe src="Grafic.pdf" title="Grafic PDF"></iframe> <!-- Aici înlocuiești cu numele PDF-ului tău -->
+    </div>
+    
+    <img src="dr1.png" alt="Imagine Dreapta" class="side-image"> <!-- Imaginea din dreapta -->
+
+    <script>
+        // Obține luna curentă
+        const date = new Date();
+        const options = { month: 'long' };
+        const lunaCurenta = date.toLocaleDateString('ro-RO', options);
+        
+        // Setează titlul paginii
+        document.title = `GRAFIC UPU ${lunaCurenta.toUpperCase()}`;
+    </script>
+</body>
+</html>
